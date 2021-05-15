@@ -32,13 +32,13 @@
 
 header{
     position: relative;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 80px;
     padding: 0 30px;
-    border-bottom: 1px solid black;
+    box-shadow: 0 0 6px 0 black
 
 }
 
@@ -93,22 +93,25 @@ main >img{
 
 
 article{
-    width: 300px;
+    width: 550px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
+    align-items: center;
     margin-right: 10%;
 }
 
 article > h1{
     font-family: poppins;
     font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
 article > p{
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
+    font-family: poppins;
+    font-size: 1.2rem;
     margin-bottom: 50px;
 }
 
@@ -119,7 +122,8 @@ article > p{
     padding: none;
     outline: none;
     color: white;
-    width: 60%;
+    height: 50px;
+    width: 40%;
     box-shadow: inset 0 0 0 0 rgb(44,173,122);;
     transition: ease-out 0.4s;
     background-color: rgb(44,173,122);
@@ -127,23 +131,21 @@ article > p{
 
 #btn:hover{
     cursor: pointer;
-    box-shadow: inset 180px 0 0 0 rgb(61,193,226);
+    box-shadow: inset 230px 0 0 0 rgb(61,193,226);
 }
 
 /* Footer */
 
 footer{
-    border: 1px solid red;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
-    height: 100px;
+    height: 130px;
 
 }
 
 #group{
-    border: 1px solid black;
     width: 160px;
     display: flex;
     flex-wrap: wrap;
@@ -153,6 +155,7 @@ footer{
 #trademark{
     display: flex;
     color: black;
+    padding-bottom: 10px;
 }
 
 #social-icon{
@@ -161,10 +164,11 @@ footer{
     align-items: center;
     width: 100px;
     margin: 0;
-    padding: 0;
+    padding-bottom: 10px;
 }
 
 #social-icon > a {
     display: flex;
     align-items: center;
 }
+
