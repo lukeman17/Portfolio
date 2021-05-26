@@ -5,13 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <title>Luke Mancuso</title>
 </head>
 <body>
 
-    <h1>Contact page.</h1>
-    
+    <!--Header and navbar-->
+    <header>
+        <h1 class="head"><a href="index.html">Luke Mancuso</a></h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>    
+            </ul>
+        </nav>
+    </header>
 
+    <div id="form-container">
+        <form action="contact-info" id="form">
+            <h1>Let's talk.</h1>
+            <p>Turn your idea into reality and put it to the world!</p>
+            <div class="alert">Your message has succesfully been sent. I'll be intouch soon!</div>
+            <label for="name">* Name:</label>
+                <input type="text" id="name" required>
+            <label for="email">* Your Email:</label>
+                <input type="email" id="email" required>
+            <label for="num">Your Phone Number:</label>
+                <input type="text" id="phone">
+            <label for="message">* Message:</label>
+                <textarea name="message" required id="message" cols="30" rows="10" placeholder="Hey, What can I do for you?"></textarea>
+            <button type="submit" id="btn">Submit</button>
+        </form>
+    </div>      
+
+
+    <footer>
+        <div id="group">
+            <div id="social-icon">
+                <a href="https://www.instagram.com/lukemancuso/" target="_blank"><img src="./images/instagram.png" alt="Instagram Logo" width="35px"></a>
+                <a href="https://www.facebook.com/luke.mancuso.7" target="_blank"><img src="./images/facebook.png" alt="Facebook Logo" width="35px"></a>
+                <a href="https://au.linkedin.com/in/luke-mancuso-b98585133" target="_blank"><img src="./images/linkedin.png" alt="linkedin Logo" width="34.8px"></a>
+            </div>
+            <p id="trademark">Luke Mancuso&#169 2021</p>
+        </div>
+    </footer>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>

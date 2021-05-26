@@ -38,8 +38,14 @@ header{
     justify-content: space-between;
     height: 80px;
     padding: 0 30px;
-    box-shadow: 0 0 6px 0 black
+    box-shadow: 0 0 6px 0 black;
+    background-color: rgb(44,173,122);
+}
 
+.head > a{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 
 nav{
@@ -54,16 +60,25 @@ ul{
     list-style-type: none;   
 }
 
-a{
+li > a{
     font-size: 1.1rem;
     text-decoration: none;
-    color: black;
+    color: white;
+    letter-spacing: 1px;
+    padding: 13px;
+    border: none;
+    outline: none;
 }
 
-a:hover{ 
-    transition: 0.2s ease;
-    text-decoration: underline;
-    color: rgb(61,193,226)
+
+
+li > a:hover{ 
+    text-decoration: none;
+    color: white;
+    background-color: rgb(61,193,226);
+    border: 1.5px solid rgb(61, 193, 226);
+    border-radius: 8px;
+    padding: 13px;
 }
 
 
@@ -78,7 +93,7 @@ a:hover{
     position: relative;
     width: 100%;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 30px;
     
 }
@@ -134,6 +149,120 @@ article > p{
     box-shadow: inset 230px 0 0 0 rgb(61,193,226);
 }
 
+  /*--------------------------------------------------------*/
+
+.portfolio-section > h2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+    margin: 10px 0px 3px 0px;
+}
+
+.portfolio-section{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ports{
+    width: 90%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    padding: 30px 5px;
+
+}
+
+.air {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.air > h4{
+    font-family: poppins;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.air > a > img{
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.air > a >img:hover{
+    transform: scale(1.01);
+    transition:  0.3s ease;
+    box-shadow: 0 2px 2px 2px gray;
+    cursor: pointer;
+}
+
+.tester {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tester > h4{
+    font-family: poppins;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tester > img{
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.tester > img:hover{
+    transform: scale(1.01);
+    transition:  0.3s ease;
+    box-shadow: 0 2px 2px 2px gray;
+    cursor: pointer;
+}
+
+.tester2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tester2 > h4{
+    font-family: poppins;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tester2 > img{
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.tester2 > img:hover{
+    transform: scale(1.01);
+    transition:  0.3s ease;
+    box-shadow: 0 2px 2px 2px gray;
+    cursor: pointer;
+}
 /* Footer */
 
 footer{
@@ -162,9 +291,9 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100px;
-    margin: 0;
-    padding-bottom: 10px;
+    width: 120px;
+    margin-bottom: 10px;
+
 }
 
 #social-icon > a {
@@ -172,3 +301,363 @@ footer{
     align-items: center;
 }
 
+
+/* About me section */
+
+.me{
+    position: relative;
+    left: 150px;
+    width: 346px;
+    border-bottom: 1px solid grey;
+    font-family: poppins, sans-serif;
+}
+
+.bio{
+    display: inline-block;
+    width: 100%;
+}
+.bio > h4{
+    font-size: 25px;
+    letter-spacing: .5px;
+    margin-left: 5px;
+}
+
+.bio > h5{
+    font-size: 14px;
+    letter-spacing: .5px;
+    margin-left: 5px;
+    padding-bottom: 5px;
+}
+
+.me > img{
+    border-radius: 15px 15px 3px 3px ;
+}
+
+.knowledge{
+    border-bottom: 1px solid black;
+    color: white;
+    letter-spacing: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1;
+    justify-content: left;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-family: poppins, sans-serif;
+    padding-bottom: 30px;
+}
+
+.learn-head{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(61,193,226);
+    border-radius: 8px 8px 2px 2px;
+    width: 100%;
+}
+
+.knowledge > img{
+    margin-top: 10px;
+    width: 120px;
+    height: auto;
+}
+
+.bio-back{
+    width: 100%;
+    height: auto;
+    background-color: rgb(218,204,195)
+}
+
+.biography{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    padding: 0;
+    width: 45%;
+    font-family: poppins;
+}
+
+.biography > h3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    color: white;
+    letter-spacing: 1px;
+    background-color: rgb(61, 193, 226);
+    border-radius: 2px 2px 8px 8px;
+}
+
+.biography > p{
+    padding: 10px 10px;
+}
+
+
+.biography > a >  #btn{
+    width: 120px;
+}
+
+  /*--------------------------------------------------------*/
+
+/* Contact page*/
+
+
+#form-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 55%;
+    height: auto;
+}
+
+#form > h1{
+    font-family: Montserrat;
+    margin-bottom: 10px;        
+}
+
+#form > h1, p{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.alert{
+    justify-content: center;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 3px;
+    color: white;
+    letter-spacing: 0.6px;
+    background-color: #56a856;
+    display: none;
+}
+
+#form > p{
+    font-family: poppins;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+#form > label{
+    margin: 20px 0px 3px 20px;
+    padding: 0px 10px;
+    font-weight: bold;
+    font-family: poppins, sans-serif;
+}
+
+#form > input{
+    height: 40px;
+    font-size: 15px;
+}
+
+#form > input, textarea{
+    margin: 0px 30px;
+}
+
+#form > #btn{
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0px 3px 4px 2px grey;
+}
+
+#form > #btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 4px 2px grey;
+    background-color: rgb(61, 193, 226);
+}
+
+
+/* Portfolio Profile */
+
+#airbnb-clone{
+    position: relative;
+    margin-top: 30px;
+    padding-top: 2px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background: rgba(222,11,128, 0.4);
+}
+
+#airbnb-clone > a > img{
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 10px;
+    width: 630px;
+    height: 400px;
+}
+
+#airbnb-clone > a > img:hover{
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 10px;
+    width: 630px;
+    height: 400px;
+    box-shadow: 0 0 6px rgb(44,173,122);
+}
+
+#air-info > h1{
+    font-size: 3rem;
+    font-family: Montserrat;
+}
+
+#air-info{
+    width: 600px;
+    height: 100%;
+    margin-right: 30px;
+}
+
+#air-description >h4{
+    font-family: poppins;
+    font-size: 25px;
+    border-bottom: 1px solid gray;
+    width: 30%;
+}
+
+#air-description{
+    font-family: poppins;
+    margin-bottom: 10px;
+}
+
+#mockup{
+    font-family: montserrat;
+    border-bottom: 1px solid gray;
+    width: 30%;
+}
+
+#air-story-board{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#air-story-board > img{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 110px;
+    height: 110px;
+
+}
+
+@media screen and (max-width: 960px) {
+    nav{
+        width: 250px;
+        font-size: 1.1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;   
+    }
+
+    li > a{
+        font-size: 1.1rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        color: white;
+        letter-spacing: 1px;
+        padding: 2px;
+        border: none;
+        outline: none;
+    }
+    
+    li > a:hover{ 
+        text-decoration: none;
+        color: white;
+        background-color: rgb(61,193,226);
+        border: 1.5px solid rgb(61, 193, 226);
+        border-radius: 8px;
+        padding: 2px;
+    }
+
+
+    main{
+        display: flex;
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        
+    }
+
+    main >img{
+        display: none;
+    }
+
+    article{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px ;
+        margin: 0;
+    }
+
+    article > h1{
+        text-align: center;
+        font-family: poppins;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    article > p{
+        text-align: center;
+        font-family: poppins;
+        font-size: 1.2rem;
+        margin-bottom: 50px;
+    }
+    
+    #btn{
+        font-size: 20px;
+        border-radius: 6px;
+        border: none;
+        padding: none;
+        outline: none;
+        color: white;
+        height: 50px;
+        width: 40%;
+        box-shadow: inset 0 0 0 0 rgb(44,173,122);;
+        transition: ease-out 0.4s;
+        background-color: rgb(44,173,122);
+    }
+    
+    #btn:hover{
+        cursor: pointer;
+        box-shadow: inset 350px 0 0 0 rgb(61,193,226);
+    }
+
+    .ports{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 5px 0;
+        border-bottom: 1px solid grey;
+        border-top: 1px solid grey;
+        padding: 30px 5px;
+        justify-content: center;
+    }
+
+    .ports > div > h4{
+        margin-bottom: 20px
+    }
+
+
+};
