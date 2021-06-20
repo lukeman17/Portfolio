@@ -208,28 +208,28 @@ article > p{
     cursor: pointer;
 }
 
-.tester {
+.mardisalon {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.tester > h4{
+.mardisalon > h4{
     font-family: poppins;
     font-size: 20px;
     display: flex;
     justify-content: center;
 }
 
-.tester > img{
+.mardisalon > a >img{
     border-radius: 10px;
     width: 250px;
     height: 300px;
-    object-fit: cover;
+    object-fit: fill;
     margin-bottom: 10px;
 }
 
-.tester > img:hover{
+.mardisalon > a > img:hover{
     transform: scale(1.01);
     transition:  0.3s ease;
     box-shadow: 0 2px 2px 2px gray;

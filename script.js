@@ -11,7 +11,7 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   
-  // refrence messages collection
+  // Refrence messages collection
   var messagesRef = firebase.database().ref('messages');
 
 //Listen for form submit
